@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BudgetTracker</string>
+    <string name="net_balance">Net Balance</string>
+    <string name="budget">Budget</string>
+    <string name="expenses">Expenses</string>
+    <string name="transactions">Transactions</string>
+</resources>
