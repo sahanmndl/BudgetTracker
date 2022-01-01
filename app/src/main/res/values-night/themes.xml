@@ -16,4 +16,5 @@
 
     <color name="colorText1">#FFFFFF</color>
     <color name="colorBtn1">#424242</color>
+    <color name="colorDrawable">#818181</color>
 </resources>

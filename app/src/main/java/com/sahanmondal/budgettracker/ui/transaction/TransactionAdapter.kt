@@ -10,7 +10,7 @@ import com.sahanmondal.budgettracker.R
 import com.sahanmondal.budgettracker.data.Transaction
 import kotlin.math.abs
 
-class TransactionAdapter(private val transactions: ArrayList<Transaction>) :
+class TransactionAdapter(private var transactions: List<Transaction>) :
     RecyclerView.Adapter<TransactionAdapter.TransactionHolder>() {
 
     class TransactionHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -40,5 +40,10 @@ class TransactionAdapter(private val transactions: ArrayList<Transaction>) :
 
     override fun getItemCount(): Int {
         return transactions.size
+    }
+
+    fun setData(transactions: List<Transaction>) {
+        this.transactions = transactions
+        notifyDataSetChanged()
     }
 }
