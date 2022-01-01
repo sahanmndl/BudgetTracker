@@ -4,4 +4,9 @@
     <string name="budget">Budget</string>
     <string name="expenses">Expenses</string>
     <string name="transactions">Transactions</string>
+    <string name="savings">Savings</string>
+    <string name="new_transaction">New Transaction</string>
+    <string name="title">Title</string>
+    <string name="amount">Amount</string>
+    <string name="description">Description</string>
 </resources>

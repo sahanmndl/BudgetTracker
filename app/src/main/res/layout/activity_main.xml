@@ -49,7 +49,7 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/tvBudget"
+                    android:id="@+id/tvSavings"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:gravity="center"
-                    android:text="@string/budget"
+                    android:text="@string/savings"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textSize="16sp" />
@@ -124,7 +124,7 @@
             android:id="@+id/rvTransactions"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/item_transaction"/>
+            tools:listitem="@layout/item_transaction" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
