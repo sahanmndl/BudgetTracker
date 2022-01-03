@@ -10,4 +10,11 @@
     <string name="amount">Amount</string>
     <string name="description">Description</string>
     <string name="add">Add</string>
+    <string name="update_transaction">Update Transaction</string>
+    <string name="update">Update</string>
+
+    <string-array name="types">
+        <item>Savings</item>
+        <item>Expense</item>
+    </string-array>
 </resources>

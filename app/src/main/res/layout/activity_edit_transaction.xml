@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="12dp"
-    tools:context=".NewTransactionActivity">
+    tools:context=".EditTransactionActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,14 +22,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:includeFontPadding="false"
-            android:text="@string/new_transaction"
+            android:text="@string/update_transaction"
             android:textAllCaps="true"
             android:textColor="@color/colorText1"
             android:textSize="22sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/btnClose"
+            android:id="@+id/btnClose2"
             android:layout_width="26dp"
             android:layout_height="26dp"
             android:background="@drawable/bg_close"
@@ -47,18 +48,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/spTypes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/types"/>
-
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilTitle"
+                android:id="@+id/tilUpTitle"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
                 android:hint="@string/title"
                 app:boxStrokeErrorColor="@color/material_red"
                 app:errorEnabled="true"
@@ -66,7 +60,7 @@
                 app:errorTextColor="@color/material_red">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etTitle"
+                    android:id="@+id/etUpTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_label"
@@ -80,7 +74,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilAmount"
+                android:id="@+id/tilUpAmount"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +86,7 @@
                 app:errorTextColor="@color/material_red">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etAmount"
+                    android:id="@+id/etUpAmount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_money"
@@ -106,7 +100,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilDescription"
+                android:id="@+id/tilUpDescription"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -117,7 +111,7 @@
                 app:errorTextColor="@color/material_red">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etDescription"
+                    android:id="@+id/etUpDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_description"
@@ -131,12 +125,13 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnAddTransaction"
+                android:id="@+id/btnUpdateTransaction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:elevation="4dp"
-                android:text="@string/add"
+                android:text="@string/update"
+                android:visibility="gone"
                 app:cornerRadius="8dp"
                 app:elevation="4dp" />
 

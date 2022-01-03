@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BudgetTracker">
         <activity
+            android:name=".EditTransactionActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewTransactionActivity"
             android:exported="false" />
         <activity
