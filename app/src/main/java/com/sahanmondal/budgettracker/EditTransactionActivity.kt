@@ -61,10 +61,10 @@ class EditTransactionActivity : AppCompatActivity() {
             inputMethodManager.hideSoftInputFromWindow(it.windowToken, 0)
         }
 
-        updateTransaction()
+        editTransaction()
     }
 
-    private fun updateTransaction() {
+    private fun editTransaction() {
         btnUpdateTransaction.setOnClickListener {
             val title: String = etUpTitle.text.toString()
             val amount: Double? = etUpAmount.text.toString().toDoubleOrNull()
