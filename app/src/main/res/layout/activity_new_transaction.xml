@@ -47,12 +47,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/spTypes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/types"/>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilTitle"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
